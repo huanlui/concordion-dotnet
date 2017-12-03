@@ -11,19 +11,16 @@ namespace CarApp.Spec
   [TestFixture]
     public class SplittingNamesFixture : ExecutableSpecification
     {
-        public Result Split(string fullName)
+        public dynamic Split(string fullName)
         {
-            Result result = new Result();
             string[] words = fullName.Split(' ');
-            result.firstName = words[0];
-            result.lastName = words[1];
-            return result;
+            return new
+            {
+                firstName = words[0],
+                lastName = words[1]
+            };
         }
     }
 
-    public class Result
-    {
-        public string firstName;
-        public string lastName;
-    }
+
 }
