@@ -1,2 +1,2 @@
 # concordion-dotnet
-Attemp to use concordion in a dot net application
+An attemp to use Concordion in a dot net application
